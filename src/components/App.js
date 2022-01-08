@@ -5,31 +5,22 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div>
-      <div className="header">
+      <div className="mainpage">
+        <div className="left-bar">
+        
         <a className="button">Last Page</a>
-        <a className="button">Current Page</a>
+        </div>
+        <div className="component">
+          <BrowserRouter>
+            <Routes>
+              <Route></Route>
+            </Routes>
+          </BrowserRouter>
+        </div>
+        <div className="right-bar">
         <a className="button">Next Page</a>
+        </div>
       </div>
-      <div className="sidebar">
-      <h1 className="sidebutton">
-          <span>
-          Profile
-          </span>
-        </h1>
-        <h1 className="sidebutton">
-          <span>
-          Profile
-          </span>
-        </h1>
-        <h1 className="sidebutton">
-          <span>
-          Profile
-          </span>
-        </h1>
-      </div>
-      <BrowserRouter>
-        <Routes></Routes>
-      </BrowserRouter>
     </div>
   );
 }
