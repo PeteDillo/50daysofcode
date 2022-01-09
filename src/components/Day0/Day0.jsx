@@ -5,7 +5,7 @@ const Day0 = (page) => {
   return (
     <div className="Main">
       <div className="counter-container">
-        <a className="counter">{page.page}</a>
+        <h1 className="counter">{page.page}</h1>
       </div>
     </div>
   );
